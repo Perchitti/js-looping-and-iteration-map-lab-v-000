@@ -4,3 +4,9 @@ return name.map(function(driver){
   return driver.toLowerCase();
 });
 }
+
+function nameToAttributes(name){
+  return name.map(function(driver){
+    return (driver.firstName + " " + driver.lastName)
+  })
+}
