@@ -7,6 +7,6 @@ return name.map(function(driver){
 
 function nameToAttributes(name){
   return name.map(function(driver){
-    return (driver.firstName + " " + driver.lastName)
+    return {firstName: driver.split('')[0], lastName: driver.split('')[1]};
   })
 }
