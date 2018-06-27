@@ -5,8 +5,8 @@ return name.map(function(driver){
 });
 }
 
-function nameToAttributes (array) {
-  return array.map( function (driver) {
+function nameToAttributes (drivers) {
+  return drivers.map( function (driver) {
     names = driver.split(" ")
     return {firstName: names[0], lastName: names[1]}
   })
