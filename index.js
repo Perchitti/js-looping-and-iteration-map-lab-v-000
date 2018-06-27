@@ -11,3 +11,9 @@ function nameToAttributes (array) {
     return {firstName: names[0], lastName: names[1]}
   })
 }
+
+function attributesToPhrase(name){
+  return name.map(function(driver){
+    return '${driver.name} is from ${driver.hometown}'
+  })
+}
